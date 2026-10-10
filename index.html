@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReportCheck</title>
+<meta name="description" content="ReportCheck is a small UK research project into how agencies catch broken or empty client reports before clients see them.">
+<style>
+  :root {
+    --bg: #f7f7f5; --surface: #ffffff; --text: #1d1f21; --muted: #5a5f66;
+    --line: #e2e2de; --accent: #1f6f5c; --accent-soft: #e6f2ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141618; --surface: #1c1f22; --text: #e8e9ea; --muted: #a3a8ae;
+      --line: #2c3035; --accent: #5cc3a4; --accent-soft: #1f3530;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  header { margin-bottom: 40px; }
+  .brand { font-weight: 700; letter-spacing: -0.01em; font-size: 20px; }
+  .brand span { color: var(--accent); }
+  h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.2; letter-spacing: -0.02em; margin: 28px 0 14px; }
+  h2 { font-size: 21px; margin: 44px 0 10px; letter-spacing: -0.01em; }
+  p, li { color: var(--text); }
+  .lead { font-size: 19px; color: var(--muted); margin: 0; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 20px 22px; margin: 16px 0;
+  }
+  .tag {
+    display: inline-block; font-size: 13px; font-weight: 600; color: var(--accent);
+    background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; margin-bottom: 6px;
+  }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: 15px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Report<span>Check</span></div>
+    <h1>How do you find out a client report went out broken?</h1>
+    <p class="lead">ReportCheck is a small UK research project. We're looking at how marketing agencies find out when a scheduled Looker Studio report goes out broken or empty, and whether an automatic check would be worth having.</p>
+  </header>
+
+  <h2>What's available now</h2>
+  <div class="card">
+    <span class="tag">Free research check</span>
+    <p>For one reporting cycle, we run up to three PDF reports you have already sent to clients through our checker. We send back a plain list of what it flagged and which pages it could not check.</p>
+    <ul>
+      <li>It looks for visible error panels, missing chart areas and the wrong reporting period.</li>
+      <li>It does not check your numbers or how fresh the data is. Pages containing images, including logos, are listed as not checked.</li>
+      <li>It doesn't replace your own review.</li>
+      <li>No cost, no card, no auto-renewal and no obligation to buy anything.</li>
+    </ul>
+  </div>
+
+  <h2>What we're exploring</h2>
+  <div class="card">
+    <span class="tag">Not available yet</span>
+    <p>An automatic check that reviews each scheduled report shortly before it reaches the client, and warns you if something looks wrong. We haven't built it. If it would be useful to you, or if you already have this covered, we'd like to hear either way.</p>
+  </div>
+
+  <h2>Your files</h2>
+  <ul>
+    <li>Share reports through a link you control and can revoke at any time. Please don't send attachments.</li>
+    <li>Only send reports you are free to share. Redact anything confidential if you're unsure.</li>
+    <li>We never ask for logins, passwords, API keys or access to your accounts.</li>
+    <li>Files are used only for your check and deleted within 14 days of us sending the result. They aren't shared or used to train anything.</li>
+    <li>We won't use your name or a case study without your written permission.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Email <a href="mailto:sami@reportcheck.co.uk">sami@reportcheck.co.uk</a>. If we've emailed you and you'd rather we didn't, reply "no thanks" and we won't contact you again.</p>
+
+  <h2 id="privacy">Privacy</h2>
+  <p class="muted">ReportCheck is the data controller for personal data in emails you send us and in any files you choose to share. We use it only to reply to you and, if you ask, to run the check described above. Our lawful basis is legitimate interests in running and replying to that research. Files are deleted within 14 days of sending your result. Emails are kept only as long as the conversation needs, and you can ask us to delete them at any time. You can ask for a copy, a correction or deletion of your data at the address above. If you're unhappy with how we've handled it, you can complain to the Information Commissioner's Office (ico.org.uk). This site sets no cookies and uses no analytics or tracking.</p>
+
+  <footer>
+    <p class="muted">&copy; 2026 ReportCheck. A small independent project based in the UK.</p>
+  </footer>
+</main>
+</body>
+</html>
